@@ -1,0 +1,41 @@
+$slide-height: 600px
+
+.slide
+  height: $slide-height
+
+.carousel-item
+  height: $slide-height
+
+.slide__img
+  width: 100%
+  object-fit: cover
+  filter: brightness(0.58)
+
+.card
+  width: 400px
+
+.card__img
+  margin: 0 auto
+  height: 150px
+  width: 150px
+  border-radius: 50%
+  object-fit: cover
+
+.citacao
+  height: 200px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  blockquote
+    margin-bottom: 0
+
+.citacao-aventura
+  background-image: linear-gradient(#00000099, #00000099), url("../img/trilha.jpg")
+
+.footer
+  height: 50px
+
+@media ( max-width: 540px ) 
+  .card 
+    width: auto
+  
