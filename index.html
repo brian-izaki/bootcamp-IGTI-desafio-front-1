@@ -91,8 +91,8 @@
 
   <main>
     <section class="container mb-5">
-      <div class="row justify-content-sm-center justify-content-md-between">
-        <div class="col col-xs-12 col-sm-12 col-md-auto card border-0 bg-transparent text-center">
+      <div class="row flex-column align-items-center justify-content-sm-center flex-md-row justify-content-md-between">
+        <div class="col card border-0 bg-transparent text-center">
           <img class="card__img" src="assets/img/treinamento-funcional.jpg" class="card-img-top"
             alt="mulher realizando treinamento funcional">
           <div class="card-body">
@@ -103,7 +103,7 @@
           </div>
         </div>
 
-        <div class="col col-xs-12 col-sm-12 col-md-auto card border-0 bg-transparent text-center">
+        <div class="col card border-0 bg-transparent text-center">
           <img class="card__img" src="assets/img/treinador.jpg" class="card-img-top" alt="treinador auxiliando">
           <div class="card-body">
             <p class="fs-3 mb-1">Treino físico</p>
@@ -113,7 +113,7 @@
           </div>
         </div>
 
-        <div class="col col-xs-12 col-sm-12 col-md-auto card border-0 bg-transparent text-center">
+        <div class="col card border-0 bg-transparent text-center">
           <img class="card__img" src="assets/img/treinamento-funcional.jpg" class="card-img-top"
             alt="mulher realizando treinamento funcional">
           <div class="card-body">
@@ -138,7 +138,7 @@
         <h2 class="col-12 fw-light fs-2 text-center">Conheça nossos planos</h2>
       </div>
 
-      <div class="row">
+      <div class="row flex-column flex-md-row">
         <div class="col">
           <div class="card">
             <div class="card-header">
@@ -215,16 +215,16 @@
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">Não compartilharemos seu e-mail com ninguém.</div>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
+            <textarea name="message" class="form-control" id="message" rows="3"></textarea>
           </div>
           <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Eu aceito receber notícias por e-mail com promoções.</label>
+            <input name="emailaccept" type="checkbox" class="form-check-input" id="emailaccept">
+            <label class="form-check-label" for="emailaccept">Eu aceito receber notícias por e-mail com promoções.</label>
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
